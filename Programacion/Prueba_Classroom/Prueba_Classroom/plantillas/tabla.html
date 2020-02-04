@@ -1,0 +1,12 @@
+<html>
+	<body>
+		<ul>
+			<p>Cursos</p>
+			{% for curso in cursos %}
+			<li>Nombre: {{ curso.nombre }} ID: {{ curso.id }}</li>
+			{% endfor %}
+		</ul>
+		<p>Alumnos: {{alumnos}}</p>
+		<p>Profesores: {{profesores}}</p>
+	</body>
+</html>
