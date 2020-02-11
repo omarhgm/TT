@@ -73,7 +73,7 @@ def grupos(request):
     plt = Template(doc_externo.read())
     doc_externo.close()
 
-    ctx = Context({"cursos": Cursos, "alumnos": alumnos,
+    ctx = Context({"cursos": courses, "alumnos": alumnos,
                    "profesores": profesores})
 
     documento = plt.render(ctx)
